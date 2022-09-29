@@ -1,22 +1,22 @@
 
 using UnityEngine;
 
-public class Player : Paddle
+public class Player_2 : Paddle
 {
-    private Vector2 directions; // variable to set direction according to player input.
+    private Vector2 directions; // variable to set direction according to SecondPlayer input.
     private void Update()//Update() is called at every frame of game.
     {
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ) // move uppwards if input keys are W or upkey.
+        if ( Input.GetKey(KeyCode.UpArrow)) // move uppwards if input keys are W or upkey.
         {
             directions = Vector2.up;//set direction to up.
 
         }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))// move downwards if player input keys are S or downkey.
+        else if ( Input.GetKey(KeyCode.DownArrow))// move downwards if SecondPlayer input keys are S or downkey.
         {
             directions = Vector2.down;//set direction to down.
         }
-        else// if player input is not correct 
+        else// if SecondPlayer input is not correct 
         {
             directions = Vector2.zero;// set direction to 0.
         }
